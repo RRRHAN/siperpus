@@ -11,7 +11,8 @@ if (isset($_POST['simpan'])) {
 		$count = mysqli_affected_rows($kon);
 	} else {
 
-		$sql = "UPDATE detail_pinjam SET tgl_kembali='$tgl_kembali', status='kembali' WHERE id_pinjam=$id_pinjam";
+		$sql = "UPDATE detail_pinjam SET tgl_kembali='$tgl_kembali', status='kembali' 
+		WHERE id_pinjam=$id_pinjam";
 		$res = mysqli_query($kon, $sql);
 		$count = mysqli_affected_rows($kon);
 	}
