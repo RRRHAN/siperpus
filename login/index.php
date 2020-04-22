@@ -15,18 +15,18 @@
 </head>
 
 <body>
-    <div class="container mx-auto">
+    <div class="container mx-auto shadow p-5 mt-5 col-lg-4">
         <form action="proses-login.php" method="post">
+            <h2>Form Login</h2>
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1">Username</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" autocomplete="off">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" name="password">
             </div>
-            <button type="submit" class="btn btn-primary" name="btnlogin">Submit</button>
+            <button type="submit" class="btn btn-primary" name="btnlogin">login</button>
         </form>
     </div>
 </body>
